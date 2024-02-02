@@ -16,7 +16,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
       <div className="sidebar-title">
         <div className="sidebar-brand">
           <img
-            src="src/images/logo.png"
+            src='./src/logo.png'
             alt="logo"
             className="logo w-5/6 mr-10"
           ></img>
