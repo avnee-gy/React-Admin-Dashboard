@@ -18,50 +18,59 @@ function Home() {
     };
     // const formattedDate = date.toLocaleString();
 
-    const data = [
+    const emp_data = [
         {
-          name: 'Page A',
-          uv: 4000,
-          pv: 2400,
-          amt: 2400,
+          name: 'Jan\'24',
+          total: 216,
+          men: 120,
+          women: 96,
         },
         {
-          name: 'Page B',
-          uv: 3000,
-          pv: 1398,
-          amt: 2210,
+          name: 'Dec\'23',
+          total: 207,
+          men: 119,
+          women: 88,
         },
         {
-          name: 'Page C',
-          uv: 2000,
-          pv: 9800,
-          amt: 2290,
+          name: 'Nov\'23',
+          total: 210,
+          men: 119,
+          women: 91,
         },
         {
-          name: 'Page D',
-          uv: 2780,
-          pv: 3908,
-          amt: 2000,
-        },
-        {
-          name: 'Page E',
-          uv: 1890,
-          pv: 4800,
-          amt: 2181,
-        },
-        {
-          name: 'Page F',
-          uv: 2390,
-          pv: 3800,
-          amt: 2500,
-        },
-        {
-          name: 'Page G',
-          uv: 3490,
-          pv: 4300,
-          amt: 2100,
+          name: 'Oct\'23',
+          total: 205,
+          men: 114,
+          women: 91,
         },
       ];
+
+      const req_data = [
+        {
+          name: 'Jan\'24',
+          total: 16,
+          men: 6,
+          women: 10,
+        },
+        {
+          name: 'Dec\'23',
+          total: 15,
+          men: 6,
+          women: 9,
+        },
+        {
+          name: 'Nov\'23',
+          total: 21,
+          men: 8,
+          women: 13,
+        },
+        {
+          name: 'Oct\'23',
+          total: 10,
+          men: 5,
+          women: 5,
+        },
+      ]
      
 
   return (
@@ -72,9 +81,9 @@ function Home() {
         <div className='row'>
 
 
-          <div className='column1'>
+          <div className='column1 m-3 p-0'>
 
-            <div className='main-cards'>
+            <div className='main-cards w-full'>
               <div className='card bg-[#FFEFE7]'>
                   <div className='card-inner '>
                       <h3>Available Position</h3>
@@ -100,7 +109,22 @@ function Home() {
 
             
 
-            <div>
+            <div className='charts flex w-full justify-between'>
+              <div className='chart-box box1 rounded-lg border-2 p-5'>
+                <h3 className='text-l font-bold'>Total Employees by Gender</h3>
+                <h1 className='text-5xl p-3 font-semibold'>216</h1>
+                <p className='time text-xs '>120 Men</p>
+                <p className='time text-xs '>96 Women</p>
+              </div>
+              
+              <div className='chart-box box2 rounded-lg border-2 mr-5 p-5'>
+                <h3 className='text-xl font-bold'>Department</h3>
+                <h1 className='text-5xl p-3 font-semibold'>16</h1>
+                <p className='time text-xs '>6 Men</p>
+                <p className='time text-xs '>96 Women</p>
+              </div>
+
+
 
             </div>
 

@@ -235,6 +235,10 @@ body {
   justify-content: space-between;
 }
 
+.chart-box{
+  flex: 50%;
+}
+
 .column2{
   flex: 25%;
 }
@@ -306,26 +310,35 @@ body {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 500px) {
+
+  .header-left input{
+    width: 100px;
+  }
   
   .card{
-    width: 100%;
+    width:70vw;
   }
 
   .column2{
     display: block;
   }
 
-  .announcement{
-    width: 100%;
+  .charts{
+    display: block;
+    width:70vw;
+  }
+  .chart-box{
+    margin-right: 0px;
   }
 
+  .announcement{
+    width:70vw;  }
+
   .activity{
-    width: 100%;
-  }
+    width:70vw;  }
   .schedule-block{
-    width: 100%;
-  }
+    width:70vw;  }
 
   .activity-inner{
     display: block;
